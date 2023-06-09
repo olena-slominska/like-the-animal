@@ -1,0 +1,50 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body {
+  background: linear-gradient(110deg, #b8ffdb, #ebfff5);
+}
+
+button {
+  background-color: #ebfff5;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  outline-color: transparent;
+  outline-style: solid;
+  font-size: 20px;
+  padding: 10px;
+  width: 30%;
+  animation: shake 5s ease-in-out infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  color: #36454f;
+  box-shadow: 0px 2px 3px lightgray;
+}
+
+@keyframes shake {
+  0%,
+  10%,
+  100% {
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+  2%,
+  6% {
+    transform: rotate(-2deg) scale(1) skew(1deg);
+  }
+  4%,
+  8% {
+    transform: rotate(2deg) scale(1) skew(1deg);
+  }
+}
+button:hover {
+  cursor: pointer;
+}
+.animal-list {
+  display: flex;
+  flex: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
